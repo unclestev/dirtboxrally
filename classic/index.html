@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#0a0612">
+<title>Dirtbox Rally Classic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main id="game" aria-label="Dirtbox Rally game screen">
+  <canvas id="screen" width="384" height="216" tabindex="0"></canvas>
+</main>
+
+
+<div id="touch" hidden>
+  <div class="t-steer" data-steer aria-label="Steer: slide left or right">
+    <span class="l" aria-hidden="true">&#9664;</span><span class="r" aria-hidden="true">&#9654;</span>
+  </div>
+  <div class="t-buttons">
+    <button type="button" data-act="boost" class="b-nitro">NITRO</button>
+    <button type="button" data-act="bomb" class="b-bomb">BOMB</button>
+    <button type="button" data-act="fire" class="b-fire">MISSILE</button>
+    <button type="button" data-act="brake" class="b-brake">BRAKE</button>
+    <button type="button" data-act="gas" class="b-gas">GAS</button>
+  </div>
+  <button type="button" data-act="pause" class="t-pause" aria-label="Pause">II</button>
+</div>
+
+<p id="rotate">Turn your phone sideways to play</p>
+
+<script src="js/config.js"></script>
+<script src="js/util.js"></script>
+<script src="js/font.js"></script>
+<script src="js/tracks.js"></script>
+<script src="js/track.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/input.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/car.js"></script>
+<script src="js/race.js"></script>
+<script src="js/hud.js"></script>
+<script src="js/screens.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
